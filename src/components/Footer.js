@@ -1,22 +1,19 @@
-import React from "react";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import "../styles/Footer.css";
+// Footer.js
+import React from 'react';
 
-function Footer() {
+const Footer = () => {
   return (
-    <div className="footer">
-      <div className="socialMedia">
-        <InstagramIcon />
-        <TwitterIcon />
-        <FacebookIcon />
-        <LinkedInIcon />
-      </div>
-      <p> &copy; 2023 github.com/keurid+</p>
-    </div>
+    <footer>
+      <p>Connect with me:</p>
+      <a href="https://github.com/keurid" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/kdesantiago99/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      {/* Maybe another link later*/}
+    </footer>
   );
-}
+};
 
 export default Footer;
